@@ -5,7 +5,7 @@ parameter DIV_COUNT=26'd24_999_999;
 
 wire clk_out;
 wire [3:0] count_4bit;
-wire [25:0] count_div;
+wire [25:0] count_di;
 
 //module clkdvd(clk_in, reset, clk_out, count);
 clkdvd #(DIV_COUNT) cd(clock50M, reset, clk_out, count_div);
@@ -17,3 +17,4 @@ sucounter4b suc(clk_out, reset, count_4bit);
 lab2a all(count_4bit, d1, d0);
 
 endmodule
+
