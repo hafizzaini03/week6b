@@ -17,7 +17,7 @@ begin
 			count <= 0;
 			clk_out <= 0;
 		end
-	else if (count >= DIV_COUNT)
+	else if (count == DIV_COUNT)
 		begin
 			count <= 0;
 			clk_out <= ~clk_out;
@@ -27,3 +27,4 @@ begin
 end
 
 endmodule
+
