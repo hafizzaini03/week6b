@@ -10,7 +10,8 @@ output reg [3:0] A;
 			4'b1101: A = 4'b0011;
 			4'b1110: A = 4'b0100;
 			4'b1111: A = 4'b0101;
-			default: A = 4'bXXXX;
+			default: A = 4'b1111;
 		endcase
+
 
 endmodule
