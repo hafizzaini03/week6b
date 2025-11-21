@@ -13,7 +13,7 @@ wire [3:0] A, m;
 wire gr;
 
 
-clock_divider CD(
+    clock_divider #(.DIV_COUNT(DIV_COUNT)) CD(
     .clock50M(clock50M),
     .reset(reset),
     .slow_clock(slow_clock),
@@ -43,4 +43,5 @@ circuit_b b0(.z(gr), .d1_seg(d1));
 decoder   d0dec(.m(m), .seg(d0));
 
 endmodule
+
 
